@@ -1,0 +1,3 @@
+[{src/**.js,package.json,reset.js,run.js}]
+indent_style = space
+indent_size = 2
