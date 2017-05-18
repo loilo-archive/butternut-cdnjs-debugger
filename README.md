@@ -47,7 +47,7 @@ You can customize the usage of the CLI `run` command with the following options:
 |--------------------|---------------|------------|
 | ‑‑take, ‑t         | 100           | How many libraries should be tested
 | ‑‑chunk‑size, ‑c   | 5             | The number of concurrently handled libraries
-| ‑‑skip-until, ‑s   | 0             | How many *untested* libraries should be skipped from the beginning of the list. This may also be a string: Passing `extjs` here will skip all items that are alphabetically coming before "extjs"—thus starting with the *extjs* library itself. Wrapping the string in `/slashes/` make it be evaluated as a regular expression, skipping all libraries until first match.
+| ‑‑skip-until, ‑s   | 0             | <p>How many *untested* libraries should be skipped from the beginning of the list.</p><p>This may also be a string: Passing `extjs` here will skip all items that are alphabetically coming before "extjs"—thus starting with the *extjs* library itself.</p><p>Wrapping the string in `/slashes/` make it be evaluated as a regular expression, skipping all libraries until first match.</p>
 | ‑‑ignore‑cache, ‑i | not set       | If this flag is set, the library list cache will be invalidated immediately, the list will be re-fetched from the cdnjs API, the *tested* marker on libraries will be ignored and no new *tested* markers will be set during the execution of the command.
 
 Combining those lets you handle most use cases – for example if you just want to test jQuery, run this:
